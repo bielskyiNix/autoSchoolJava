@@ -28,7 +28,7 @@ public class Hello {
     }
 
     public static void byeBye(){
-        System.out.println("Bye " + name1 + "!");
+        System.out.println("Bye " + name + "!");
     }
 
 }
