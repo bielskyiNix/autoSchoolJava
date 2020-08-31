@@ -1,4 +1,4 @@
-package com.module1.primitivetypes1;
+package com.module_1.primitive_types_1;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,14 +12,14 @@ public class Main {
         helloName2();
     }
 
-    public static void helloName(){
+    static void helloName(){
         Scanner in = new Scanner(System.in);
         System.out.print("Enter your name:");
         String name = in.nextLine();
         System.out.println("Hello " + name + "!");
     }
 
-    public static void helloName2() throws IOException {
+     static void helloName2() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter your name:");
         String name = reader.readLine();

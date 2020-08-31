@@ -1,4 +1,4 @@
-package com.module1.strings;
+package com.module_1.strings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,16 +6,19 @@ import java.io.InputStreamReader;
 
 public class PracticalTask1 {
 
-    static String newString;
+    public static void readLineandPerformActions() throws IOException {
 
-    public static void readLine() throws IOException {
         System.out.print("Enter string: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        newString = reader.readLine();
+        String newString = reader.readLine();
+
+        firstMiddleLastsymbols(newString);
+        numberOfSymbol(newString, ' ');
+        substringToDot(newString);
 
     }
 
-    public static void firstMiddleLastsymbols(){
+    public static void firstMiddleLastsymbols(String newString){
 
         System.out.println("First symbol:" + newString.charAt(0));
         System.out.println("Last symbol:" + newString.charAt(newString.length()-1));
@@ -29,7 +32,7 @@ public class PracticalTask1 {
 
     }
 
-    public static void numberOfSymbol(char Symbol){
+    public static void numberOfSymbol(String newString,char Symbol){
 
         char[] newStringList = newString.toCharArray();
         int count = 0;
@@ -44,7 +47,7 @@ public class PracticalTask1 {
 
     }
 
-    public static void substringToDot(){
+    public static void substringToDot(String newString){
 
         if (newString.contains(".")) {
 

@@ -1,4 +1,4 @@
-package com.module1.strings;
+package com.module_1.strings;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,36 +6,32 @@ import java.io.InputStreamReader;
 
 public class PracticalTask2 {
 
-    static String userString;
-    static String userSubstring;
-    static String newSubstring;
 
-    public static void readString() throws IOException {
+    public static String readString() throws IOException {
 
         System.out.print("Enter string: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        userString = reader.readLine();
-
+        String userString = reader.readLine();
+        return userString;
     }
 
-    public static void readSubstring() throws IOException {
+    public static String readSubstring() throws IOException {
 
         System.out.print("Enter substring: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        userSubstring = reader.readLine();
+        String userSubstring = reader.readLine();
+        return userSubstring;    }
 
-    }
-
-    public static void readNewSubstring() throws IOException {
+    public static String readNewSubstring() throws IOException {
 
         System.out.print("Enter new substring: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        newSubstring = reader.readLine();
-
+        String newSubstring = reader.readLine();
+        return newSubstring;
     }
 
 
-    public static void findAndReplaceSubstring(){
+    public static void findAndReplaceSubstring(String userString, String userSubstring, String newSubstring){
 
         if (userString.contains(userSubstring)){
 

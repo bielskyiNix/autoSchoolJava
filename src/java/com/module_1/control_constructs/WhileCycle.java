@@ -1,4 +1,4 @@
-package com.module1.controlconstructs;
+package com.module_1.control_constructs;
 
 import java.io.BufferedReader;
 import java.io.IOException;
