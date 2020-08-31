@@ -9,11 +9,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        Hello obj = new Hello();
+        Hello first_object = new Hello();
 
-        obj.readName();
-        obj.welcome(); // Greet the person
+        first_object.readName();
+        first_object.welcome(); // Greet the person
         System.out.println("Hello world!"); // Displays text "Hello world!"
-        obj.byeBye(); // Say goodbye to the person
+        first_object.byeBye(); // Say goodbye to the person
     }
 }
