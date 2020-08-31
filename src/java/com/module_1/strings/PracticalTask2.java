@@ -13,6 +13,7 @@ public class PracticalTask2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String userString = reader.readLine();
         return userString;
+
     }
 
     public static String readSubstring() throws IOException {
@@ -20,7 +21,9 @@ public class PracticalTask2 {
         System.out.print("Enter substring: ");
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String userSubstring = reader.readLine();
-        return userSubstring;    }
+        return userSubstring;
+
+    }
 
     public static String readNewSubstring() throws IOException {
 
@@ -28,6 +31,7 @@ public class PracticalTask2 {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String newSubstring = reader.readLine();
         return newSubstring;
+
     }
 
 
