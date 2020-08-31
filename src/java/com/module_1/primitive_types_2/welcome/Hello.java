@@ -10,7 +10,7 @@ public class Hello {
 
     public void readName() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-             System.out.print("Enter your name:");
+        System.out.print("Enter your name:");
         String userName = reader.readLine();
         setupName(userName);
     }
