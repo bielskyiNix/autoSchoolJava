@@ -117,7 +117,7 @@ public class ConditionalStatementsAndSwith {
 
     }
 
-    public static void Names() throws IOException {
+    public static void names() throws IOException {
 
         String[] list = new String[2];
 

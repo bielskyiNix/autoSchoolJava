@@ -10,7 +10,7 @@ public class Main {
         ConditionalStatementsAndSwith.twoNumbers();
         ConditionalStatementsAndSwith.fourNumbers();
         ConditionalStatementsAndSwith.threeNumbers();
-        ConditionalStatementsAndSwith.Names();
+        ConditionalStatementsAndSwith.names();
         ConditionalStatementsAndSwith.nameAndAge();
         ConditionalStatementsAndSwith.gamewithNumbers();
 
