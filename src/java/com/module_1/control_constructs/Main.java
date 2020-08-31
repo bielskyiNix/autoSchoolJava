@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Practical tasks 8 - 12");
         WhileCycle.while10("D"); // A = Ascending, D = Descending
         WhileCycle.stringXNumber();
-         WhileCycle.letterCube();
+        WhileCycle.letterCube();
         WhileCycle.multiplicationTable();
 
         System.out.println("Practical tasks 13 - 18");
