@@ -18,9 +18,7 @@ public class ReaderWriter {
             list[i] = reader.readLine();
 
         }
-
         return list;
-
     }
 
     public static int[] readIntegers(int listLength) throws IOException {
@@ -35,9 +33,7 @@ public class ReaderWriter {
             numbers[i] = Integer.parseInt(reader.readLine());
 
         }
-
         return numbers;
-
     }
 
     public static void printList(int[] list){
@@ -57,6 +53,4 @@ public class ReaderWriter {
 
         }
     }
-
-
 }

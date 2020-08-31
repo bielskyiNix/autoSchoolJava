@@ -15,9 +15,7 @@ public class PracticalTasks {
             }
 
         }
-
         System.out.println("Max=" + max);
-
     }
 
     public static void invertedArray(String[] list){
@@ -46,7 +44,7 @@ public class PracticalTasks {
     public static int[] reversedArray(int[] list){
 
         int k = list.length - 1;
-        int temp = 0;
+        int temp;
 
         for(int i = 0; i < list.length/2; i++){
 
@@ -55,9 +53,7 @@ public class PracticalTasks {
             list[k - i] = temp;
 
         }
-
         return list;
-
     }
 
     public static int[] twoArrays(int[] list){
