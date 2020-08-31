@@ -6,27 +6,26 @@ import java.io.InputStreamReader;
 
 public class Hello {
 
-    private static String name;
+    private String name;
 
-    public static String readName() throws IOException {
+    public void readName() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.print("Enter your name:");
         String userName = reader.readLine();
-        return setupName(userName);
+        setupName(userName);
     }
 
-    public static String setupName(String name1) throws IOException {
-        name = name1;
-        return name;
+    public void setupName(String name){
+        this.name = name;
     }
 
 
-    public static void welcome(String name2) {
-        System.out.println("Hello " + name2 + "!");
+    public void welcome() {
+        System.out.println("Hello " + name + "!");
     }
 
-    public static void byeBye(String name3){
-        System.out.println("Bye " + name3 + "!");
+    public void byeBye(){
+        System.out.println("Bye " + name + "!");
     }
 
 }
