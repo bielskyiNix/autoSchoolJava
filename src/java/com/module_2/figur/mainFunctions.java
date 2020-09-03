@@ -1,7 +1,6 @@
 package com.module_2.figur;
 
 import java.util.*;
-import java.util.function.ToDoubleFunction;
 
 public class mainFunctions {
 
@@ -75,14 +74,47 @@ public class mainFunctions {
 
 
         }
+
+
+
+        printer(geometricFigureArrayList);
+        System.out.println();
+
         return geometricFigureArrayList;
     }
 
     public static void printer(ArrayList<GeometricFigure> list) {
 
         for (int j = 0; j < 10; j++){
-            System.out.println(list.get(j).getName() + " " + list.get(j).calculateArea(list.get(j).getCoordinateX(),list.get(j).getCoordinateY()));
+            System.out.println(list.get(j).getName() + ", S = " + list.get(j).calculateArea(list.get(j).getCoordinateX(),list.get(j).getCoordinateY()));
         }
+    }
+
+    public static ArrayList<GeometricFigure>  sortingFiguresByArea(ArrayList<GeometricFigure> list){
+
+        boolean sorted = false;
+        double figureArea1;
+        double figureArea2;
+        GeometricFigure temp;
+
+        while (!sorted){
+            sorted = true;
+            for (int i = 0; i < list.size()-1; i++){
+                figureArea1 = list.get(i).calculateArea(list.get(i).getCoordinateX(),
+                        list.get(i).getCoordinateY());
+                figureArea2 = list.get(i+1).calculateArea(list.get(i+1).getCoordinateX(),
+                        list.get(i+1).getCoordinateY());
+
+                if( figureArea1 > figureArea2 ){
+                    temp = list.get(i);
+                    list.set(i, list.get(i+1));
+                    list.set(i+1,temp);
+                    sorted = false;
+                }
+            }
+        }
+
+        return list;
 
     }
 

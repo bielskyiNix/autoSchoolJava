@@ -5,9 +5,7 @@ public class Main {
 
     public static void main(String[] args){
 
-
-    mainFunctions.printer(mainFunctions.createRandomFiguresAndSortbyArea(10));
-
+    mainFunctions.printer(mainFunctions.sortingFiguresByArea(mainFunctions.createRandomFiguresAndSortbyArea(10)));
 
     }
 }
