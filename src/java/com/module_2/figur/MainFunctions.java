@@ -2,15 +2,15 @@ package com.module_2.figur;
 
 import java.util.*;
 
-public class mainFunctions {
+public class MainFunctions {
 
     public static ArrayList<GeometricFigure> createRandomFigures(int numberOfFigures) {
 
         ArrayList<GeometricFigure> geometricFigureArrayList = new ArrayList<>();
 
-        String circleName = null;
-        String triangleName = null;
-        String squareName = null;
+        String circleName;
+        String triangleName;
+        String squareName;
 
         int minimumOfCoordinates = 2;
 
@@ -75,11 +75,11 @@ public class mainFunctions {
 
         }
 
-
-        //System.out.println("Unsorted list of Geometric Figures");
-        //printer(geometricFigureArrayList);
-        //System.out.println();
-
+        /*
+        System.out.println("Unsorted list of Geometric Figures");
+        printer(geometricFigureArrayList);
+        System.out.println();
+        */
         return geometricFigureArrayList;
     }
 
@@ -113,7 +113,7 @@ public class mainFunctions {
                 }
             }
         }
-        //System.out.println("Sorted list of Geometric Figures");
+        //System.out.println("list of Geometric Figures sorted by Area ");
         return list;
 
     }
