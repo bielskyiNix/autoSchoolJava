@@ -4,7 +4,7 @@ import java.util.*;
 
 public class mainFunctions {
 
-    public static ArrayList<GeometricFigure> createRandomFiguresAndSortbyArea(int numberOfFigures) {
+    public static ArrayList<GeometricFigure> createRandomFigures(int numberOfFigures) {
 
         ArrayList<GeometricFigure> geometricFigureArrayList = new ArrayList<>();
 
@@ -76,9 +76,9 @@ public class mainFunctions {
         }
 
 
-
-        printer(geometricFigureArrayList);
-        System.out.println();
+        //System.out.println("Unsorted list of Geometric Figures");
+        //printer(geometricFigureArrayList);
+        //System.out.println();
 
         return geometricFigureArrayList;
     }
@@ -113,7 +113,7 @@ public class mainFunctions {
                 }
             }
         }
-
+        //System.out.println("Sorted list of Geometric Figures");
         return list;
 
     }
