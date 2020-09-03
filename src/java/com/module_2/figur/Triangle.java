@@ -8,7 +8,7 @@ public class Triangle extends GeometricFigure {
     }
 
     @Override
-    public double calculateArea(double[] x, double[] y) {
+     public double calculateArea(double[] x, double[] y) {
 
         double S;
 

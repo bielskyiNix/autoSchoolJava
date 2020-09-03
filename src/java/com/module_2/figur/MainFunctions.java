@@ -6,7 +6,7 @@ public class MainFunctions {
 
     public static ArrayList<GeometricFigure> createRandomFigures(int numberOfFigures) {
 
-        ArrayList<GeometricFigure> geometricFigureArrayList = new ArrayList<>();
+         ArrayList<GeometricFigure> geometricFigureArrayList = new ArrayList<>();
 
         String circleName;
         String triangleName;

@@ -6,7 +6,7 @@ public abstract class GeometricFigure {
     private double[] coordinateX;
     private double[] coordinateY;
 
-    public GeometricFigure(String name, double[] x, double[] y) {
+     public GeometricFigure(String name, double[] x, double[] y) {
         setName(name);
         setCoordinateX(x);
         setCoordinateY(y);
