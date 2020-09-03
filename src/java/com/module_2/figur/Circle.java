@@ -9,7 +9,7 @@ public class Circle extends GeometricFigure{
 
     @Override
     public double calculateArea(double[] x, double[] y) {
-        double S;
+         double S;
 
         S = Math.PI * (Math.pow(x[0] - x[1], 2) + (Math.pow(y[0] - y[1],2)));
 
