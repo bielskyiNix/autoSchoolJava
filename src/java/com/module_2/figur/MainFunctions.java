@@ -78,7 +78,6 @@ public class MainFunctions {
         /*
         System.out.println("Unsorted list of Geometric Figures");
         printer(geometricFigureArrayList);
-        System.out.println();
         */
         return geometricFigureArrayList;
     }
@@ -113,7 +112,7 @@ public class MainFunctions {
                 }
             }
         }
-        //System.out.println("list of Geometric Figures sorted by Area ");
+
         return list;
 
     }
