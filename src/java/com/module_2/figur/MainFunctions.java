@@ -21,54 +21,36 @@ public class MainFunctions {
             int numberOfCoordinates = random.nextInt(2 + 1);
             numberOfCoordinates += minimumOfCoordinates;
 
+            double[] listOfCoordinatesX = new double[numberOfCoordinates];
+            double[] listOfCoordinatesY = new double[numberOfCoordinates];
+
+            for (int i = 0; i < numberOfCoordinates; i++) {
+                listOfCoordinatesX[i] = random.nextDouble() * 10;
+                listOfCoordinatesY[i] = random.nextDouble() * 10;
+            }
+
             if (numberOfCoordinates == 2) {
-
-                double[] listCircleX = new double[2];
-                double[] listCircleY = new double[2];
-
-                for (int i = 0; i < numberOfCoordinates; i++) {
-                    listCircleX[i] = random.nextDouble() * 10;
-                    listCircleY[i] = random.nextDouble() * 10;
-                }
 
                 circleName = "Circle" + j;
 
-                geometricFigureArrayList.add(new Circle(circleName, listCircleX, listCircleY));
+                geometricFigureArrayList.add(new Circle(circleName, listOfCoordinatesX, listOfCoordinatesY));
 
             }
 
             if (numberOfCoordinates == 3) {
 
-                double[] listTriangleX = new double[3];
-                double[] listTriangleY = new double[3];
-
-                for (int i = 0; i < numberOfCoordinates; i++) {
-                    listTriangleX[i] = random.nextDouble() * 10;
-                    listTriangleY[i] = random.nextDouble() * 10;
-
-                }
-
                 triangleName = "Triangle" + j;
 
-                geometricFigureArrayList.add(new Triangle(triangleName, listTriangleX, listTriangleY));
+                geometricFigureArrayList.add(new Triangle(triangleName, listOfCoordinatesX, listOfCoordinatesY));
 
 
             }
 
             if (numberOfCoordinates == 4) {
 
-                double[] listSquareX = new double[4];
-                double[] listSquareY = new double[4];
-
-
-                for (int i = 0; i < numberOfCoordinates; i++) {
-                    listSquareX[i] = random.nextDouble() * 10;
-                    listSquareY[i] = random.nextDouble() * 10;
-                }
-
                 squareName = "Square" + j;
 
-                geometricFigureArrayList.add(new Square(squareName, listSquareX, listSquareY));
+                geometricFigureArrayList.add(new Square(squareName, listOfCoordinatesX, listOfCoordinatesY));
 
             }
 
