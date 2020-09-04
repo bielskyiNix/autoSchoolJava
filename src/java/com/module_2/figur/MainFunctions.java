@@ -8,9 +8,8 @@ public class MainFunctions {
 
         ArrayList<GeometricFigure> geometricFigureArrayList = new ArrayList<>();
 
-        String circleName;
-        String triangleName;
-        String squareName;
+        String figureName;
+
 
         int minimumOfCoordinates = 2;
 
@@ -31,26 +30,26 @@ public class MainFunctions {
 
             if (numberOfCoordinates == 2) {
 
-                circleName = "Circle" + j;
+                figureName = "Circle" + j;
 
-                geometricFigureArrayList.add(new Circle(circleName, listOfCoordinatesX, listOfCoordinatesY));
+                geometricFigureArrayList.add(new Circle(figureName, listOfCoordinatesX, listOfCoordinatesY));
 
             }
 
             if (numberOfCoordinates == 3) {
 
-                triangleName = "Triangle" + j;
+                figureName = "Triangle" + j;
 
-                geometricFigureArrayList.add(new Triangle(triangleName, listOfCoordinatesX, listOfCoordinatesY));
+                geometricFigureArrayList.add(new Triangle(figureName, listOfCoordinatesX, listOfCoordinatesY));
 
 
             }
 
             if (numberOfCoordinates == 4) {
 
-                squareName = "Square" + j;
+                figureName = "Square" + j;
 
-                geometricFigureArrayList.add(new Square(squareName, listOfCoordinatesX, listOfCoordinatesY));
+                geometricFigureArrayList.add(new Square(figureName, listOfCoordinatesX, listOfCoordinatesY));
 
             }
 
