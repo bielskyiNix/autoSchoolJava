@@ -63,9 +63,9 @@ public class MainFunctions {
         return geometricFigureArrayList;
     }
 
-    public static void printer(ArrayList<GeometricFigure> list) {
+    public static void printer(ArrayList<GeometricFigure> list, int numberOfElements) {
 
-        for (int j = 0; j < 10; j++){
+        for (int j = 0; j < numberOfElements; j++){
             System.out.println(list.get(j).getName() + ", S = " + list.get(j).calculateArea(list.get(j).getCoordinateX(),list.get(j).getCoordinateY()));
         }
     }
