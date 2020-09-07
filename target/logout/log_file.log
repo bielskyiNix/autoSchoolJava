@@ -40,3 +40,27 @@ WARN  ClassWithTwoMethods 13 - Method execution start
 2020-09-07 18:50:05 WARN  ClassWithTwoMethods 27 - java.lang.ArithmeticException: / by zero
 2020-09-07 18:50:05 INFO  ClassWithTwoMethods 30 - Method execution start
 2020-09-07 18:50:05 INFO  ClassWithTwoMethods 32 - Method execution end
+2020-09-07 18:54:18 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:54:18 WARN  ClassWithTwoMethods 30 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:54:53 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:55:13 WARN  ClassWithTwoMethods 30 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:55:56 INFO  ClassWithTwoMethods 14 - Method execution start
+2020-09-07 18:55:56 WARN  ClassWithTwoMethods 21 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:55:56 INFO  ClassWithTwoMethods 29 - Method execution start
+2020-09-07 18:55:56 INFO  ClassWithTwoMethods 31 - Method execution end
+2020-09-07 18:56:26 INFO  ClassWithTwoMethods 14 - Method execution start
+2020-09-07 18:56:26 ERROR ClassWithTwoMethods 21 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:56:26 INFO  ClassWithTwoMethods 29 - Method execution start
+2020-09-07 18:56:26 INFO  ClassWithTwoMethods 31 - Method execution end
+2020-09-07 18:59:27 INFO  ClassWithTwoMethods 14 - Method execution start
+2020-09-07 18:59:27 ERROR ClassWithTwoMethods 21 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:59:27 INFO  ClassWithTwoMethods 29 - Method execution start
+2020-09-07 18:59:27 INFO  ClassWithTwoMethods 31 - Method execution end
+2020-09-07 19:01:29 INFO  c.m.l.ClassWithTwoMethods 14 - Method execution start
+2020-09-07 19:01:29 ERROR c.m.l.ClassWithTwoMethods 21 - java.lang.ArithmeticException: / by zero
+2020-09-07 19:01:29 INFO  c.m.l.ClassWithTwoMethods 29 - Method execution start
+2020-09-07 19:01:29 INFO  c.m.l.ClassWithTwoMethods 31 - Method execution end
+2020-09-07 19:01:43 INFO  com.module_3.logging.ClassWithTwoMethods 14 - Method execution start
+2020-09-07 19:01:43 ERROR com.module_3.logging.ClassWithTwoMethods 21 - java.lang.ArithmeticException: / by zero
+2020-09-07 19:01:43 INFO  com.module_3.logging.ClassWithTwoMethods 29 - Method execution start
+2020-09-07 19:01:43 INFO  com.module_3.logging.ClassWithTwoMethods 31 - Method execution end

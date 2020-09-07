@@ -10,27 +10,26 @@ public class ClassWithTwoMethods {
 
     private void privateMethod(){
 
-        classWithTwoMethods.info("Method execution start");
-        System.out.println("Private method execution completed");
-        int zero = 5/0;
-        classWithTwoMethods.info("Method execution end");
+        try {
+            classWithTwoMethods.info("Method execution start");
+            System.out.println("Private method execution completed");
+            int zero = 5/0;
+            classWithTwoMethods.info("Method execution end");
+        }
+        catch (ArithmeticException e){
 
+            classWithTwoMethods.error(e.toString());
+
+        }
     }
 
     public void publicMethod() {
 
-        try {
-            privateMethod();
-        }
-        catch (ArithmeticException e){
+        privateMethod();
+        classWithTwoMethods.info("Method execution start");
+        System.out.println("Public method execution completed");
+        classWithTwoMethods.info("Method execution end");
 
-            classWithTwoMethods.warn(e.toString());
-
-        } finally {
-            classWithTwoMethods.info("Method execution start");
-            System.out.println("Public method execution completed");
-            classWithTwoMethods.info("Method execution end");
-        }
 
     }
 
