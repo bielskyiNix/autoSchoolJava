@@ -13,9 +13,9 @@ public class Main {
 
     public static void practicalTask1(int q,int w){
 
-        int devisionResult = q / w;
+        int divisionResult = q / w;
         int remainderFromDivision = q % w;
-        System.out.println("The result from division: " + devisionResult + " and remainder from division: " + remainderFromDivision );
+        System.out.println("The result from division: " + divisionResult + " and remainder from division: " + remainderFromDivision );
 
     }
 

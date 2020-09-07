@@ -15,7 +15,7 @@ public class WhileCycle {
             }
         } else if (direction.equals("D")) {
             int i = 10;
-            while (i > 0) {
+            while (i >= 0) {
                 System.out.println(i);
                 i--;
             }
@@ -34,11 +34,10 @@ public class WhileCycle {
         System.out.print("Введите число: ");
         number = Integer.parseInt(reader.readLine());
 
-        int i = 0;
-        while (i < number) {
+        while (number > 0) {
 
             System.out.println(userString);
-            i++;
+            number--;
         }
 
     }

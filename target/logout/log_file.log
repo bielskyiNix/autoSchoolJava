@@ -1,0 +1,42 @@
+2020-09-07 18:36:18 WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:36:18 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:36:18 INFO  ClassWithTwoMethods 23 - Method execution start
+2020-09-07 18:36:18 INFO  ClassWithTwoMethods 25 - Method execution end
+WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:43:05 WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:43:05 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:43:05 INFO  ClassWithTwoMethods 23 - Method execution start
+2020-09-07 18:43:05 INFO  ClassWithTwoMethods 25 - Method execution end
+2020-09-07 18:43:30 WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:43:30 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:43:30 INFO  ClassWithTwoMethods 23 - Method execution start
+2020-09-07 18:43:30 INFO  ClassWithTwoMethods 25 - Method execution end
+2020-09-07 18:45:21 WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:45:21 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:45:21 INFO  ClassWithTwoMethods 23 - Method execution start
+2020-09-07 18:45:21 INFO  ClassWithTwoMethods 25 - Method execution end
+2020-09-07 18:47:01 WARN  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:47:01 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:47:01 WARN  ClassWithTwoMethods 30 - Error
+2020-09-07 18:47:21 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:47:21 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:47:21 WARN  ClassWithTwoMethods 30 - Error
+2020-09-07 18:47:27 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:47:27 INFO  ClassWithTwoMethods 15 - Method execution end
+2020-09-07 18:47:27 WARN  ClassWithTwoMethods 30 - Error
+2020-09-07 18:48:14 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:48:14 WARN  ClassWithTwoMethods 27 - Error
+2020-09-07 18:48:14 INFO  ClassWithTwoMethods 30 - Method execution start
+2020-09-07 18:48:14 INFO  ClassWithTwoMethods 32 - Method execution end
+2020-09-07 18:48:40 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:48:40 WARN  ClassWithTwoMethods 27 - / by zero
+2020-09-07 18:48:40 INFO  ClassWithTwoMethods 30 - Method execution start
+2020-09-07 18:48:40 INFO  ClassWithTwoMethods 32 - Method execution end
+2020-09-07 18:49:06 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:49:06 WARN  ClassWithTwoMethods 27 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:49:06 INFO  ClassWithTwoMethods 30 - Method execution start
+2020-09-07 18:49:06 INFO  ClassWithTwoMethods 32 - Method execution end
+2020-09-07 18:50:05 INFO  ClassWithTwoMethods 13 - Method execution start
+2020-09-07 18:50:05 WARN  ClassWithTwoMethods 27 - java.lang.ArithmeticException: / by zero
+2020-09-07 18:50:05 INFO  ClassWithTwoMethods 30 - Method execution start
+2020-09-07 18:50:05 INFO  ClassWithTwoMethods 32 - Method execution end
