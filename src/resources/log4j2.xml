@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
- <Configuration status="info" name="Module_3" packages="com.module_3.logging">
-     <Appenders>
-         <File name="LogFile" fileName="./target/logout/log_file.log">
-             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} %L - %m%n"/>
-         </File>
-     </Appenders>
-     <Loggers>
-         <Root level="all">
-             <AppenderRef ref="LogFile"/>
-         </Root>
-     </Loggers>
- </Configuration>
+<Configuration>
+
+    <Appenders>
+        <File name="LogFile" fileName="./src/target/log-output/log_file.log">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1} %L - %m%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <Root level="Error">
+            <AppenderRef ref="LogFile"/>
+        </Root>
+
+        <Logger name="com.module_3.logging" level="debug" additivity="false">
+            <AppenderRef ref="LogFile" />
+        </Logger>
+
+    </Loggers>
+
+</Configuration>

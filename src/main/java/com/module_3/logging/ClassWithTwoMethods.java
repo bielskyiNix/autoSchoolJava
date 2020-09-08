@@ -6,29 +6,36 @@ import org.apache.logging.log4j.Logger;
 
 public class ClassWithTwoMethods {
 
-    static final Logger classWithTwoMethods = LogManager.getLogger(ClassWithTwoMethods.class.getName());
+    static final Logger classWithTwoMethodsLogger = LogManager.getLogger(ClassWithTwoMethods.class.getName());
 
     private void privateMethod(){
 
         try {
-            classWithTwoMethods.info("Method execution start");
+
+            classWithTwoMethodsLogger.info("privateMethod execution start");
+
             System.out.println("Private method execution completed");
             int zero = 5/0;
-            classWithTwoMethods.info("Method execution end");
+
+            classWithTwoMethodsLogger.info("privateMethod execution end");
+
         }
         catch (ArithmeticException e){
 
-            classWithTwoMethods.error(e.toString());
+            classWithTwoMethodsLogger.error(e.toString());
 
         }
     }
 
     public void publicMethod() {
 
+        classWithTwoMethodsLogger.info("publicMethod execution start");
+
         privateMethod();
-        classWithTwoMethods.info("Method execution start");
+
         System.out.println("Public method execution completed");
-        classWithTwoMethods.info("Method execution end");
+
+        classWithTwoMethodsLogger.info("publicMethod execution end");
 
 
     }
