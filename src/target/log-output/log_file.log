@@ -2,3 +2,7 @@
 2020-09-08 12:00:30 INFO  ClassWithTwoMethods 15 - privateMethod execution start
 2020-09-08 12:00:30 ERROR ClassWithTwoMethods 25 - java.lang.ArithmeticException: / by zero
 2020-09-08 12:00:30 INFO  ClassWithTwoMethods 38 - publicMethod execution end
+2020-09-08 15:20:27 INFO  ClassWithTwoMethods 32 - publicMethod execution start
+2020-09-08 15:20:27 INFO  ClassWithTwoMethods 15 - privateMethod execution start
+2020-09-08 15:20:27 ERROR ClassWithTwoMethods 25 - java.lang.ArithmeticException: / by zero
+2020-09-08 15:20:27 INFO  ClassWithTwoMethods 38 - publicMethod execution end
