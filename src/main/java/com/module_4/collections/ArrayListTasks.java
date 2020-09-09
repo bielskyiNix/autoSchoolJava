@@ -6,8 +6,8 @@ public class ArrayListTasks {
 
     public static ArrayList<String> findLargestOrSmallestString(ArrayList<String> arrayList, String wordSize) {
         ArrayList<String> stringsArrayList = new ArrayList<>();
+        stringsArrayList.add(arrayList.get(0));
         if(wordSize == "largest"){
-            stringsArrayList.add("");
             for (int i = 0; i < arrayList.size(); i++) {
                 if (arrayList.get(i).length() > stringsArrayList.get(0).length()) {
                     stringsArrayList.clear();
@@ -19,7 +19,6 @@ public class ArrayListTasks {
             }
         }
         else if(wordSize == "smallest"){
-            stringsArrayList.add(arrayList.get(0));
             for (int i = 0; i < arrayList.size(); i++) {
                 if (arrayList.get(i).length() < stringsArrayList.get(0).length()) {
                     stringsArrayList.clear();

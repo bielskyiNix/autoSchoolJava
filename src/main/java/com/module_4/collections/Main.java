@@ -31,13 +31,18 @@ public class Main {
       ReaderWriter.printerList(ArrayListTasks.addRemoveLastElement(ReaderWriter.readUsersStrings(5)), false); //Task 11: "Удали последнюю строку и вставь её в начало"
 
 
-      // Task11: "Создать множество строк (Set<String>), занести в него 20 слов на букву «Л»."
+      // Task12: "Создать множество строк (Set<String>), занести в него 20 слов на букву «Л»."
       ReaderWriter.printerList(SetAndMapTasks.hashSetAdd20Strings());
       System.out.println(SetAndMapTasks.hashSetAdd20Strings().size());
 
-      // Task12: "Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.Удалить из множества все числа больше 10."
+      // Task13: "Создать множество чисел(Set<Integer>), занести туда 20 различных чисел.Удалить из множества все числа больше 10."
+      ReaderWriter.printerList(SetAndMapTasks.hashSetAdd10Integers(20,true));
+      // Task 14: " Создать словарь (Map<String, String>) занести в него десять записей по принципу «Фамилия» - «Имя». Проверить сколько людей имеют совпадающие с заданным имя или фамилию."
+      SetAndMapTasks.checkName(ReaderWriter.readUsersStrings(1).toString(),SetAndMapTasks.firstNameLastName(),true, true);
+      // Task 15: "Создать словарь (Map<String, LocalDate>) и занести в него десять записей по принципу: «фамилия» - «дата рождения». Удалить из словаря всех людей, родившихся летом."
 
-      ReaderWriter.printerList(SetAndMapTasks.hashSetAdd10Integers(true));
+      // Task 16: "Создать словарь (Map<String, String>) занести в него десять записей по принципу «фамилия» - «имя». Удалить людей, имеющих одинаковые имена."
 
+      // Task 17: "Создать словарь Map (<String, String>) и добавить туда 10 человек в виде «Фамилия»-«Имя».Пусть среди этих 10 человек есть люди с одинаковыми именами.Пусть среди этих 10 человек есть люди с одинаковыми фамилиями. Обратить внимание на количество записей в получившейся коллекции.Вывести содержимое Map на экран"
    }
 }
