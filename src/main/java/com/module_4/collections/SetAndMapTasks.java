@@ -1,54 +1,125 @@
 package com.module_4.collections;
 
+import java.security.KeyStore;
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.*;
 
 public class SetAndMapTasks {
 
-    static String[] firstName = new String[]{"Иван", "Игорь", "Кирилл", "Дарья", "Анна", "Марина", "Ольга", "Александр", "Борис", "Кирилл"};
-    static String[] lastName = new String[]{"Белоус", "Пробейголова", "Белка", "Поттер",  "Гриффиндор", "Редл", "Утюг", "Ястребь", "Кучеров", "Калач" };
-
-    public static Set<String> hashSetAdd20Strings(){
+    public static Set<String> hashSetAdd20Strings() {
         Set<String> hashSet20 = new HashSet<>();
-        hashSet20.addAll(Arrays.asList("Лондон","Лимон","Лук","Лакомство","Луковица",
-                "Ладан","Лист","Логика","Ликорис","Лак",
-                "Луна","Лимфоузел","Лазер","Лакей","Люк",
-                "Лепесток","Лебедь","Ларёк","Лампа","Луг"));
+        hashSet20.addAll(Arrays.asList("Лондон", "Лимон", "Лук", "Лакомство", "Луковица",
+                "Ладан", "Лист", "Логика", "Ликорис", "Лак",
+                "Луна", "Лимфоузел", "Лазер", "Лакей", "Люк",
+                "Лепесток", "Лебедь", "Ларёк", "Лампа", "Луг"));
         return hashSet20;
     }
 
-    public static Set<Integer> hashSetAdd10Integers(int setSize,boolean removeGreaterThan10){
+    public static Set<Integer> hashSetAdd10Integers(int setSize, boolean removeGreaterThan10) {
         Set<Integer> hashSet10 = new HashSet<>();
         Random random = new Random();
         while (hashSet10.size() < setSize) {
             hashSet10.add(random.nextInt(30 + 1));
         }
-        if (removeGreaterThan10) hashSet10.removeIf(i->i > 10);
+        if (removeGreaterThan10) hashSet10.removeIf(i -> i > 10);
         return hashSet10;
     }
 
-    public static Map<String, String> firstNameLastName() {
+    public static Map<String, String> firstNameLastNameCreation(String[] lastName, String[] firstName) {
 
-        Map<String, String> firstNameLastNameMap= new HashMap<>();
+        Map<String, String> firstNameLastNameMap = new HashMap<>();
 
-        for(int i=0; i<lastName.length; i++){
-            firstNameLastNameMap.put(lastName[i],firstName[i]);
+        for (int i = 0; i < lastName.length; i++) {
+            firstNameLastNameMap.put(lastName[i], firstName[i]);
         }
 
         return firstNameLastNameMap;
     }
 
-    public static Map<String, String> checkName(String name, Map<String,String> namesMap, boolean firstName, boolean deleteSameName){
+    public static int checkContainName(List<String> usersName, Map<String, String> namesMap) {
 
         int count = 0;
-            if (firstName);
-            if (deleteSameName);
-        return namesMap;
+        Iterator<Map.Entry<String, String>> entryIterator = namesMap.entrySet().iterator();
+        if (namesMap.containsKey(usersName.get(0))) {
+            while (entryIterator.hasNext()) {
+                Map.Entry<String, String> entry = entryIterator.next();
+                if (entry.getKey().equals(usersName.get(0))) {
+                    count++;
+                    break;
+                }
+            }
+        }
+        if (namesMap.containsValue(usersName.get(0))) {
+            while (entryIterator.hasNext()) {
+                Map.Entry<String, String> entry = entryIterator.next();
+                if (entry.getValue().equals(usersName.get(0))) {
+                    count++;
+                }
+            }
+        }
+
+        return count;
+    }
+
+    public static Map<String, String> deleteWithSameFirstName(Map<String, String> usersMap) {
+
+        ArrayList<String> values = new ArrayList<String>(usersMap.values());
+        for (String a : values) {
+            int count = 0;
+            for (int i = 0; i < values.size(); i++) {
+                if (a.equals(values.get(i))) {
+                    count++;
+                }
+                if (count > 1) {
+                    removeItemFromMapByValue(usersMap, a);
+                }
+            }
+
+        }
+        return usersMap;
+    }
+
+
+    public static Map<String, String> removeItemFromMapByValue(Map<String, String> usersMap, String value) {
+        Map<String, String> copy = new HashMap<>(usersMap);
+        for (Map.Entry<String, String> pair : copy.entrySet()) {
+            if (pair.getValue().equals(value))
+                usersMap.remove(pair.getKey());
+        }
+
+        return usersMap;
+    }
+
+    public static Map<String, LocalDate> deleteBornInSummer(String[] lastName) {
+
+        Map<String, LocalDate> lastNameDateOfBirthMap = new HashMap<>();
+        Random random = new Random();
+        int min = 7300;
+
+        for (int i = 0; i < lastName.length; i++) {
+
+            lastNameDateOfBirthMap.put(lastName[i], LocalDate.now().minusDays(min + random.nextInt(30000 + 1)));
+
+        }
+
+        System.out.println("Список имен без изменений");
+        ReaderWriter.printMap(lastNameDateOfBirthMap, "key-value");
+
+        Iterator<Map.Entry<String, LocalDate>> entryIterator = lastNameDateOfBirthMap.entrySet().iterator();
+        while (entryIterator.hasNext()) {
+            Map.Entry<String, LocalDate> entry = entryIterator.next();
+            if (entry.getValue().getMonth() == Month.AUGUST || entry.getValue().getMonth() == Month.JUNE || entry.getValue().getMonth() == Month.JULY) {
+                entryIterator.remove();
+            }
+        }
+
+        System.out.println();
+        System.out.println("Список имен без рожденных летом");
+        return lastNameDateOfBirthMap;
 
     }
 
 
-
-
-
-
 }
+

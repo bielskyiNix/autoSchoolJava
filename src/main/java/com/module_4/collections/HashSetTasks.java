@@ -1,25 +1,23 @@
 package com.module_4.collections;
 
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
+import java.util.*;
 
 public class HashSetTasks {
 
     String[] plantName = new String[]{"арбуз", "банан", "вишня", "груша", "дыня", "ежевика", "жень-шень", "земляника", "ирис", "картофель"};
     String[] plantType = new String[]{"ягода", "трава", "ягода", "фрукт",  "овощ", "куст", "корень", "ягода", "цветок", "клубень" };
 
-    public HashSet<String> plants(){
+    public Set<String> plants(){
 
-        HashSet<String> plantsHashSet= new HashSet<String>();
+        Set<String> plantsHashSet= new HashSet<String>();
         Collections.addAll(plantsHashSet,plantName);
 
         return plantsHashSet;
     }
 
-    public HashMap<String,String> plantsAndType(){
+    public Map<String,String> plantsAndType(){
 
-        HashMap<String,String> plantsHashMap = new HashMap<String, String>();
+        Map<String,String> plantsHashMap = new HashMap<String, String>();
         for(int i=0; i<plantType.length; i++){
             plantsHashMap.put(plantName[i],plantType[i]);
         }
@@ -27,9 +25,9 @@ public class HashSetTasks {
         return plantsHashMap;
     }
 
-    public HashMap<String, Cat> catsCreation(){
+    public Map<String, Cat> catsCreation(){
 
-        HashMap<String,Cat> cats = new HashMap<String, Cat>();
+        Map<String,Cat> cats = new HashMap<String, Cat>();
         for (int i=0; i<10; i++){
             Cat newCat = new Cat("Name"+i);
             cats.put(newCat.getName(),newCat);
@@ -37,9 +35,9 @@ public class HashSetTasks {
         return cats;
     }
 
-    public HashMap<String,Object> hashMapForPrint(){
+    public Map<String,Object> hashMapForPrint(){
 
-        HashMap<String,Object> obj = new HashMap<String, Object>();
+        Map<String,Object> obj = new HashMap<String, Object>();
         for (int i=0; i<10; i++){
             Object newObj = new String("Name"+i);
             obj.put(newObj.toString(),newObj);

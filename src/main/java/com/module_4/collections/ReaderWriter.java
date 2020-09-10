@@ -7,9 +7,9 @@ import java.util.*;
 
 public class ReaderWriter {
 
-    public static ArrayList<String> readUsersStrings(int listLength) throws IOException {
+    public static List<String> readUsersStrings(int listLength) throws IOException {
 
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
         System.out.println(String.format("Enter %s strings:",listLength));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -35,7 +35,7 @@ public class ReaderWriter {
 
     }
 
-    public static void printHashMap(Map<String, ?> hashMap, String valueToPrint){
+    public static void printMap(Map<String, ?> hashMap, String valueToPrint){
 
         if (valueToPrint == "key-value"){
 
@@ -67,11 +67,11 @@ public class ReaderWriter {
         }
     }
 
-    public static void printerList(ArrayList<String> arrayList, boolean printSize){
+    public static void printerList(List<String> listToPrint, boolean printSize){
 
-        if(printSize) System.out.println("ArrayList size = " + arrayList.size());
+        if(printSize) System.out.println("ArrayList size = " + listToPrint.size());
 
-        for(String arrayListValue: arrayList){
+        for(String arrayListValue: listToPrint){
 
             System.out.println(arrayListValue);
 

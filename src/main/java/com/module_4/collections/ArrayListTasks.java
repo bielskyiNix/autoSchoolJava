@@ -1,31 +1,30 @@
 package com.module_4.collections;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ArrayListTasks {
 
-    public static ArrayList<String> findLargestOrSmallestString(ArrayList<String> arrayList, String wordSize) {
-        ArrayList<String> stringsArrayList = new ArrayList<>();
-        stringsArrayList.add(arrayList.get(0));
+    public static List<String> findLargestOrSmallestString(List<String> usersList, String wordSize) {
+        List<String> stringsArrayList = new ArrayList<>();
         if(wordSize == "largest"){
-            for (int i = 0; i < arrayList.size(); i++) {
-                if (arrayList.get(i).length() > stringsArrayList.get(0).length()) {
+            for (int i = 0; i < usersList.size(); i++) {
+                if (usersList.get(i).length() > stringsArrayList.get(0).length()) {
                     stringsArrayList.clear();
-                    stringsArrayList.add(arrayList.get(i));
+                    stringsArrayList.add(usersList.get(i));
                 }
-                else if (arrayList.get(i).length() == stringsArrayList.get(0).length()){
-                    stringsArrayList.add(arrayList.get(i));
+                else if (usersList.get(i).length() == stringsArrayList.get(0).length()){
+                    stringsArrayList.add(usersList.get(i));
                 }
             }
         }
         else if(wordSize == "smallest"){
-            for (int i = 0; i < arrayList.size(); i++) {
-                if (arrayList.get(i).length() < stringsArrayList.get(0).length()) {
+            for (int i = 0; i < usersList.size(); i++) {
+                if (stringsArrayList.isEmpty() || usersList.get(i).length() < stringsArrayList.get(0).length()) {
                     stringsArrayList.clear();
-                    stringsArrayList.add(arrayList.get(i));
+                    stringsArrayList.add(usersList.get(i));
                 }
-                else if (arrayList.get(i).length() == stringsArrayList.get(0).length()){
-                    stringsArrayList.add(arrayList.get(i));
+                else if (usersList.get(i).length() == stringsArrayList.get(0).length()){
+                    stringsArrayList.add(usersList.get(i));
                 }
             }
         }
@@ -34,16 +33,16 @@ public class ArrayListTasks {
     }
 
 
-    public static ArrayList<String> addRemoveLastElement(ArrayList<String> arrayList){
+    public static List<String> addRemoveLastElement(List<String> list){
 
         for(int i = 0; i < 13; i++) {
-            arrayList.add(0, String.valueOf(arrayList.size()));
-            arrayList.remove(arrayList.size()-1);
+            list.add(0, list.get(list.size()-1));
+            list.remove(list.size()-1);
         }
-        return arrayList;
+        return list;
     }
 
-    public static ArrayList<String> addListToBeginning(ArrayList<String> createdList,ArrayList<String> usersList){
+    public static List<String> addListToBeginning(List<String> createdList,List<String> usersList){
 
         for (int i = usersList.size()-1; i>=0; i--){
             createdList.add(0, usersList.get(i));
