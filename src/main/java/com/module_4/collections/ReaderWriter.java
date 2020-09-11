@@ -14,7 +14,6 @@ public class ReaderWriter {
         System.out.println(String.format("Enter %s strings:",listLength));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        
         for (int i = 0; i < listLength; i++) {
 
             list.add(reader.readLine());
