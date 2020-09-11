@@ -14,6 +14,7 @@ public class ReaderWriter {
         System.out.println(String.format("Enter %s strings:",listLength));
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
+        
         for (int i = 0; i < listLength; i++) {
 
             list.add(reader.readLine());
@@ -60,11 +61,7 @@ public class ReaderWriter {
 
         if(printSize) System.out.println("Set size = " + hashSet.size());
 
-        for (Object text : hashSet){
-
-            System.out.println(text);
-
-        }
+        hashSet.forEach(System.out::println);
 
     }
 
@@ -72,11 +69,7 @@ public class ReaderWriter {
 
         if(printSize) System.out.println("List size = " + listToPrint.size());
 
-        for(String listValue: listToPrint){
-
-            System.out.println(listValue);
-
-        }
+        listToPrint.forEach(System.out::println);
     }
 
 }
