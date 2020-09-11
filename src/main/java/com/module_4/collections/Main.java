@@ -13,6 +13,7 @@ public class Main {
       //Задачи на HashSet
       HashSetTasks obj = new HashSetTasks();
       System.out.println("Tasks 1-6");
+
       ReaderWriter.printerList(obj.plants()); // Task1: "HashSet из растений"
       ReaderWriter.printMap(obj.plantsAndType(),"key-value"); // Task2: "HashMap из 10 пар"
       ReaderWriter.printMap(obj.catsCreation(),"key-value");  // Task3: "Коллекция HashMap из котов"
@@ -22,6 +23,7 @@ public class Main {
 
       //Задачи на ArrayList
       System.out.println("Tasks 7-11");
+
       ReaderWriter.printerList(ReaderWriter.readUsersStrings(5), true); // Task 7: " 5 различных строчек в списке"
       ReaderWriter.printerList(ArrayListTasks.findLargestOrSmallestString(ReaderWriter.readUsersStrings(5), "largest"), false); // Task 8: "Самая длинная строка"
       ReaderWriter.printerList(ArrayListTasks.findLargestOrSmallestString(ReaderWriter.readUsersStrings(5), "smallest"), false); // Task 9: "Самая короткая строка"
@@ -33,6 +35,8 @@ public class Main {
 
       ReaderWriter.printerList(ArrayListTasks.addRemoveLastElement(ReaderWriter.readUsersStrings(5)), false); //Task 11: "Удали последнюю строку и вставь её в начало"
 
+      //Задач на Set и Map
+      System.out.println("Tasks 12-17");
 
       // Task12: "Создать множество строк (Set<String>), занести в него 20 слов на букву «Л»."
       ReaderWriter.printerList(SetAndMapTasks.hashSetAdd20Strings());
@@ -42,7 +46,6 @@ public class Main {
       ReaderWriter.printerList(SetAndMapTasks.hashSetAdd10Integers(20,true));
 
       // С фамилиями кому-то не повезло :D (для задач 14,15,16,17)
-      String[] firstNameValues = new String[]{"Иван", "Игорь", "Кирилл", "Дарья", "Анна", "Марина", "Ольга", "Александр", "Борис", "Сергей"};
       String[] lastNameValues = new String[]{"Белоус", "Пробейголова", "Белка", "Поттер",  "Гриффиндор", "Редл", "Утюг", "Ястребь", "Кучеров", "Калач" };
       String[] firstNameWithDuplicates = new String[]{"Марина", "Игорь", "Кирилл", "Игорь", "Анна", "Марина", "Ольга", "Марина", "Борис", "Кирилл"};
       String[] lastNameWithDuplicates = new String[]{"Белоус", "Пробейголова", "Белка", "Поттер",  "Гриффиндор", "Пробейголова", "Утюг", "Ястребь", "Кучеров", "Утюг"};
