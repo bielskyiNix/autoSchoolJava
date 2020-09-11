@@ -24,18 +24,7 @@ public class ReaderWriter {
 
     }
 
-
-    public static void printerList(Set<?> hashSet){
-
-        for (Object text : hashSet){
-
-            System.out.println(text);
-
-        }
-
-    }
-
-    public static void printMap(Map<String, ?> hashMap, String valueToPrint){
+    public static void printMap(Map<?, ?> hashMap, String valueToPrint){
 
         if (valueToPrint == "key-value"){
 
@@ -67,13 +56,25 @@ public class ReaderWriter {
         }
     }
 
+    public static void printerList(Set<?> hashSet, boolean printSize){
+
+        if(printSize) System.out.println("Set size = " + hashSet.size());
+
+        for (Object text : hashSet){
+
+            System.out.println(text);
+
+        }
+
+    }
+
     public static void printerList(List<String> listToPrint, boolean printSize){
 
-        if(printSize) System.out.println("ArrayList size = " + listToPrint.size());
+        if(printSize) System.out.println("List size = " + listToPrint.size());
 
-        for(String arrayListValue: listToPrint){
+        for(String listValue: listToPrint){
 
-            System.out.println(arrayListValue);
+            System.out.println(listValue);
 
         }
     }

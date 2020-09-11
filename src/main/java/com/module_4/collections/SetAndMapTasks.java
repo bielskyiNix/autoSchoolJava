@@ -47,7 +47,7 @@ public class SetAndMapTasks {
         return firstNameLastNameMap;
     }
 
-    public static int checkContainName(List<String> usersName, Map<String, String> namesMap) {
+    public static void checkContainName(List<String> usersName, Map<String, String> namesMap) {
 
         int count = 0;
         Iterator<Map.Entry<String, String>> entryIterator = namesMap.entrySet().iterator();
@@ -59,11 +59,14 @@ public class SetAndMapTasks {
                 Map.Entry<String, String> entry = entryIterator.next();
 
                 if (entry.getKey().equals(usersName.get(0))) {
+
                     count++;
-                    break;
+                    System.out.println(String.format(" %s is in list",usersName.get(0)));
+                    break; // Фамилия уникальна, так что если один раз совпала, дальше считать нет смысла
 
                 }
             }
+
         }
         else if (namesMap.containsValue(usersName.get(0))) {
 
@@ -77,9 +80,14 @@ public class SetAndMapTasks {
 
                 }
             }
-        }
 
-        return count;
+            System.out.printf(("There are %d people with name %f in the list"),usersName.get(0),count);
+        }
+        else {
+
+            System.out.println("Совпадений нет");
+
+        }
     }
 
     public static Map<String, String> deleteWithSameFirstName(Map<String, String> usersMap) {
@@ -115,7 +123,7 @@ public class SetAndMapTasks {
 
         Map<String, String> copyOfUsersMap = new HashMap<>(usersMap); // для обхода ConcurrentModificationException
 
-        for (Map.Entry<String, String> entry : usersMap.entrySet()) {
+        for (Map.Entry<String, String> entry : copyOfUsersMap.entrySet()) {
 
             if (entry.getValue().equals(value)) {
 
