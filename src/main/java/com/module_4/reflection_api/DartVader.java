@@ -12,7 +12,6 @@ public class DartVader {
             printerFieldNameAndFieldValue(objArray[i]);
         }
 
-
     }
 
     public static <T extends DartVader> void printerFieldNameAndFieldValue(T object) throws IllegalAccessException {

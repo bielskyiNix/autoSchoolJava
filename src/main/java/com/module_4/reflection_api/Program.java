@@ -30,7 +30,6 @@ public class Program {
                 .collect(StringBuilder::new, StringBuilder::appendCodePoint, StringBuilder::append)
                 .toString();
 
-
         return generatedString;
     }
 
