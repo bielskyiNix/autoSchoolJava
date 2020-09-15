@@ -1,0 +1,5 @@
+mvn clean install -Dtest=ApiForMavenTest (ApiForMavenTest tests execution)
+mvn clean install -Dtest=UiForMavenTest (UiForMavenTest tests execution)
+mvn clean install -Dtest=ApiForMavenTest,UiForMavenTest (All tests execution)
+mvn test (All tests execution)
+mvn clean test (All tests execution)
