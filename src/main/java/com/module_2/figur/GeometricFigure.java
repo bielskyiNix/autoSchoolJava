@@ -7,9 +7,9 @@ public abstract class GeometricFigure {
     private double[] coordinateY;
 
     public GeometricFigure(String name, double[] x, double[] y) {
-        setName(name);
-        setCoordinateX(x);
-        setCoordinateY(y);
+        this.name = name;
+        this.coordinateX = x;
+        this.coordinateY = y;
     }
 
     public abstract double calculateArea(double[] x, double[] y);

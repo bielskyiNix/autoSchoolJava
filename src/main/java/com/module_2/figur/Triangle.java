@@ -10,9 +10,7 @@ public class Triangle extends GeometricFigure {
     @Override
     public double calculateArea(double[] x, double[] y) {
 
-        double S;
-
-        S = Math.abs(((x[0] - x[2]) * (y[1]) - y[2]) - (x[1] * (y[0] - y[2]) - x[2] * (y[0] - y[2]))) / 2;
+        double S = Math.abs(((x[0] - x[2]) * (y[1]) - y[2]) - (x[1] * (y[0] - y[2]) - x[2] * (y[0] - y[2]))) / 2;
 
 
         return S;

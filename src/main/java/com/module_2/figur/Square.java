@@ -10,9 +10,7 @@ public class Square extends GeometricFigure{
     @Override
     public double calculateArea(double[] x, double[] y) {
 
-        double S;
-
-        S =Math.pow((x[0]-x[1]),2);
+        double S = Math.pow((x[0]-x[1]),2);
 
         return S;
     }
